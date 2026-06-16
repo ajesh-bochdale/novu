@@ -2,7 +2,7 @@
 set -euo pipefail
 
 NOVU_DIR="${NOVU_DIR:-./novu}"
-REPO_BASE="https://raw.githubusercontent.com/novuhq/novu/next/docker/community"
+REPO_BASE="https://raw.githubusercontent.com/ajesh-bochdale/novu/next/docker/community"
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
