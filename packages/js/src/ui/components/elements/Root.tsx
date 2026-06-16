@@ -8,11 +8,8 @@ export const Root = (props: RootProps) => {
   const [_, rest] = splitProps(props, ['class']);
   const { id } = useAppearance();
   const style = useStyle();
-  const { hideBranding } = useInboxContext();
-
   return (
     <>
-      <Show when={!hideBranding()}>{new Comment(' Powered by Novu - https://novu.co ')}</Show>
       <div
         id={`novu-root-${id()}`}
         class={style({

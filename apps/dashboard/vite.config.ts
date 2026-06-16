@@ -126,6 +126,11 @@ export default defineConfig(({ mode }) => {
     },
     optimizeDeps: {
       include: ['@novu/api'],
+      esbuildOptions: {
+        supported: {
+          destructuring: true,
+        },
+      },
     },
     esbuild: {
       // Workaround for https://github.com/evanw/esbuild/issues/4436

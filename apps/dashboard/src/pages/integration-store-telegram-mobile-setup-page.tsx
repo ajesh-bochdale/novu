@@ -292,15 +292,6 @@ function Card({ children, className }: { children: React.ReactNode; className?: 
 
 function PoweredByNovu() {
   return (
-    <a
-      href="https://novu.co"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-text-soft hover:text-text-strong mt-8 inline-flex items-center gap-2 text-label-xs transition"
-      aria-label="Powered by Novu"
-    >
-      <span>Powered by</span>
-      <img src="/images/novu-logo-dark.svg" alt="Novu" className="h-3.5" />
-    </a>
+    <></>
   );
 }

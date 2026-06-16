@@ -1,0 +1,14 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: novu_redis
+    restart: always
+    # If REDIS_PASSWORD is not set in your .env, it will fallback to "novu_redis_secret"
+    command: redis-server --requirepass ${REDIS_PASSWORD:-novu_redis_secret} --appendonly yes
+    ports:
+      - "127.0.0.1:6379:6379" # Bound to localhost for security
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

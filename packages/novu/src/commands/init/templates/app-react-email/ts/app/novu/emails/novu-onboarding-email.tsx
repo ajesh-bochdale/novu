@@ -120,11 +120,7 @@ export const NovuWelcomeEmail = ({
             })}
           </Container>
 
-          <Container className="mt-20">
-            <Text className="text-center text-gray-400 mb-45">
-              Powered by Novu, the Code-First Notification Infrastructure
-            </Text>
-          </Container>
+
         </Body>
       </Tailwind>
     </Html>
